@@ -4,6 +4,7 @@ let days: [Day] = [DayOne(),
                    DayTwo(),
                    DayThree(),
                    DayFour(),
-                   DayFive()]
+                   DayFive(),
+                   DaySix()]
 
 days.forEach({ $0.execute() })

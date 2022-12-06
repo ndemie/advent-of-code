@@ -19,7 +19,7 @@ public extension Day {
     }
 
     var input: String {
-        let fileURL = Bundle.main.url(forResource: "input-\(Self.dayNumber)", withExtension: "txt")
+        let fileURL = Bundle.main.url(forResource: "input-\(self.dayNumber)", withExtension: "txt")
         let input = try! String(contentsOf: fileURL!, encoding: String.Encoding.utf8)
         return input
     }

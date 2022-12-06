@@ -11,7 +11,7 @@ public struct DayOne: Day {
         printFormattedResult(partOne: partOne, partTwo: partTwo)
     }
 
-    public func executePartOne() -> String {
+    private func executePartOne() -> String {
         let elvesFoodStrings = input.components(separatedBy: "\n\n")
         let elvesFoodArrays = elvesFoodStrings.map { string in
             return string.components(separatedBy: "\n")
@@ -27,7 +27,7 @@ public struct DayOne: Day {
         return String(biggestElfInventory ?? 0)
     }
 
-    public func executePartTwo() -> String {
+    private func executePartTwo() -> String {
         let elvesFoodStrings = input.components(separatedBy: "\n\n")
         let elvesFoodArrays = elvesFoodStrings.map { string in
             return string.components(separatedBy: "\n")
